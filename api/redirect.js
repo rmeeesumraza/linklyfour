@@ -12,7 +12,7 @@ export default function handler(req, res) {
     const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
   
     // Redirection logic
-    if (utmCampaign === '__AID_NAME__') {
+    if (utmCampaign === '__qaso__') {
       // UTM campaign 'l1' takes priority for both desktop and mobile
       res.writeHead(302, { Location: whitePageURL });
     } else if (isMobileDevice) {
